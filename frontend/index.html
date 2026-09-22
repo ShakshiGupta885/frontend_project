@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Phone Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>📱 Mini Phone Order</h1>
+
+    <form id="orderForm">
+
+        <label>Name</label>
+        <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            required
+        >
+
+        <label>Phone Number</label>
+        <input
+            type="tel"
+            id="phone"
+            placeholder="Enter phone number"
+            required
+        >
+
+        <label>Phone Model</label>
+        <select id="product">
+            <option value="iPhone 15">iPhone 15</option>
+            <option value="iPhone 16">iPhone 16</option>
+            <option value="Samsung S24">Samsung S24</option>
+            <option value="OnePlus 13">OnePlus 13</option>
+        </select>
+
+        <label>Quantity</label>
+        <input
+            type="number"
+            id="quantity"
+            value="1"
+            min="1"
+            required
+        >
+
+        <label>Payment Method</label>
+        <select id="paymentMethod">
+            <option value="UPI">UPI</option>
+            <option value="Card">Card</option>
+            <option value="Cash on Delivery">Cash on Delivery</option>
+        </select>
+
+        <button type="submit">
+            Place Order
+        </button>
+
+    </form>
+
+    <div id="result"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
